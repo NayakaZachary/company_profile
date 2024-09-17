@@ -26,3 +26,131 @@ section {
     max-width: 150px;
     filter: drop-shadow( 1px 1px 1px rgba(0,0,0,0,8));
 }
+
+/* Style untuk container section */
+.team {
+    padding: 20px 0;
+  }
+  
+  /* Grid untuk team members */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Jarak antar item grid */
+  }
+  
+  /* Setiap anggota tim */
+  .team-member {
+    text-align: center; /* Center text di dalam container */
+  }
+  
+  /* Gambar responsif */
+  .team-member img {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar container */
+    height: auto; /* Memastikan gambar menjaga rasio aspek */
+  }
+  
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Memberikan ruang antara kolom */
+    flex-wrap: wrap; /* Membuat kolom responsif */
+    max-width: 1200px; /* Membatasi lebar maksimum konten footer */
+    margin: 0 auto; /* Menempatkan konten di tengah */
+    padding: 0 20px; /* Padding untuk responsif di perangkat kecil */
+}
+
+.footer-section {
+    flex: 1; /* Setiap kolom memiliki lebar yang sama */
+    padding: 0 20px; /* Memberikan ruang di sekitar konten setiap kolom */
+    margin-bottom: 30px; /* Jarak bawah untuk perangkat kecil */
+}
+
+.footer-section h3 {
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin-bottom: 20px; /* Jarak antara judul dan konten */
+    color: #ffffff;
+    border-bottom: 2px solid #4e57d4; /* Garis bawah pada judul */
+    display: inline-block;
+}
+
+.footer-section p {
+    font-size: 0.9rem; /* Ukuran font paragraf */
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none; /* Menghilangkan bullet list */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000; /* Warna link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #4e57d4; /* Warna link saat hover */
+}
+
+.footer-section.contact p {
+    margin: 5px 0; /* Jarak vertikal antar baris kontak */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #aa00ff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #aa00ff;
+}

@@ -14,7 +14,7 @@
 }
 
 .clients img {
-    max-width: 150px;
+    max-width: 200px;
     filter: drop-shadow( 1px 1px 1px rgba(0,0,0,0,8));
 }
 
@@ -22,8 +22,8 @@ section {
     padding: 20px 0;
 }
 
-.partner img {
-    max-width: 150px;
+#partner .img-partner {
+    max-width: 300px;
     filter: drop-shadow( 1px 1px 1px rgba(0,0,0,0,8));
 }
 
@@ -49,6 +49,42 @@ section {
     width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar container */
     height: auto; /* Memastikan gambar menjaga rasio aspek */
   }
+
+  /* CSS untuk membuat gambar bisa diklik dan memberikan efek hover */
+.career-image img, .job-image img, .achievement-image img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.career-image img:hover, .job-image img:hover, .achievement-image img:hover {
+    transform: scale(1.05);
+}
+
+/* CSS untuk tampilan yang lebih rapi */
+.achievement-image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.achievement-image img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Tambahan untuk responsive design */
+@media (max-width: 768px) {
+    .achievement-image img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievement-image img {
+        width: 100%;
+    }
+}
+
   
 
 .footer-container {
